@@ -18,7 +18,7 @@ class minecraft {
   }
   
   file {'/etc/systemd/system/minecraft.service':
-    ensure => file
+    ensure => file,
     source => 'puppet:///modules/minecraft/minecraft.service',
    }
    
